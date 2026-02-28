@@ -26,7 +26,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=["https://portfolio-frontend-gumt6ynep-manishkt52s-projects.vercel.app/"],
     allow_methods=["*"],
     allow_headers=["*"],
 )
@@ -64,7 +64,7 @@ def ask(payload: ChatRequest):
 
     resume_link_html = """
 <br/><br/>
-<a href="http://localhost:3000/resume.pdf" target="_blank"
+<a href="https://portfolio-frontend-gumt6ynep-manishkt52s-projects.vercel.app/resume.pdf" target="_blank"
 style="color:#60a5fa;font-weight:500;text-decoration:underline;">
 Download Resume
 </a>
